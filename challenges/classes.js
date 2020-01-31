@@ -9,25 +9,24 @@
 //     return this.length * this.width * this.height;
 //   }
 
-  class Cuboid extends CubeMaker {
+  class Cuboid {
       constructor(props) {
-          super(props)
           this.length = props.length,
           this.width =  props.width, 
           this.height = props.height
       }
-      vol() {
+      vol2() {
         return this.length * this.width * this.height;
       }
-      surfArea() {
+      surfArea2() {
         return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
       }
   }
 
-  const ugly = new Cuboid ({
+  const ugly2 = new Cuboid ({
       length: 4,
       width: 5,
-      height: 5;
+      height: 5
   })
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:

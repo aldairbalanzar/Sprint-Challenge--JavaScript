@@ -99,13 +99,20 @@ console.log(getContactInfo(graduates));
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
 function unisWithUni(list) {
-  let listUni = [];
+  // let listUni = [];
   // list.forEach(student => listUni.push(student.university.includes('Uni')));
-  list.forEach(student => {
+
+  // list.forEach((student) => {
+  //   if(student.university.includes('Uni')) {
+  //     return listUni.push(student.university);
+  //   }
+
+  list.map(student => {
     if(student.university.includes('Uni')) {
-      return listUni.push(student.university);
+      return list.student;
     }
   });
+}
 
 console.log(unisWithUni(graduates));
 
@@ -176,4 +183,3 @@ console.log(totalPopulation(zooAnimals));
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
 
 */
-
